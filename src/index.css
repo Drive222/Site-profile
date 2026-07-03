@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: 166 73% 54%;
+  --color-secondary: 220 60% 63%;
+  --color-accent: 32 96% 62%;
+  --color-background: 222 48% 6%;
+  --color-surface: 224 36% 10%;
+  --color-text: 214 42% 94%;
+  --color-muted: 218 16% 68%;
+  --color-border: 218 32% 24%;
+  --color-shadow: 222 72% 3%;
+  color: hsl(var(--color-text));
+  background: hsl(var(--color-background));
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme='light'] {
+  --color-primary: 168 52% 36%;
+  --color-secondary: 214 42% 44%;
+  --color-accent: 24 77% 50%;
+  --color-background: 42 52% 96%;
+  --color-surface: 0 0% 100%;
+  --color-text: 220 20% 10%;
+  --color-muted: 218 12% 43%;
+  --color-border: 218 18% 82%;
+  --color-shadow: 220 28% 16%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, hsl(var(--color-primary) / 0.16), transparent 34rem),
+    radial-gradient(circle at bottom right, hsl(var(--color-accent) / 0.12), transparent 32rem),
+    hsl(var(--color-background));
+  color: hsl(var(--color-text));
+  transition:
+    background-color 220ms ease,
+    color 220ms ease;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  color: hsl(var(--color-background));
+  background: hsl(var(--color-primary));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

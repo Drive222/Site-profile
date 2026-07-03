@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "title": "Computer Science Teacher Portfolio",
+    "description": "Portfolio of an informatics teacher showcasing lessons, student projects, classroom skills and social contacts."
+  },
+  "routes": {
+    "hero": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Gallery",
+    "languages": "Languages",
+    "experience": "Experience",
+    "certificates": "Certifications",
+    "contact": "Contact"
+  },
+  "nav": {
+    "ariaLabel": "Primary navigation",
+    "menuOpen": "Open navigation menu",
+    "menuClose": "Close navigation menu"
+  },
+  "language": {
+    "label": "Language",
+    "en": "EN",
+    "ru": "RU",
+    "kg": "KG"
+  },
+  "theme": {
+    "toggleToLight": "Switch to light theme",
+    "toggleToDark": "Switch to dark theme"
+  },
+  "hero": {
+    "eyebrow": "Informatics Teacher & CS Educator",
+    "title": "Teaching programming, algorithms and digital skills to students.",
+    "name": "Oruzbaeva Nurgul Ishenbekovna",
+    "profession": "Informatics Teacher",
+    "intro": "I prepare learners for programming competitions, school projects and future digital careers through hands-on lessons.",
+    "cta": {
+      "primary": "View lessons",
+      "secondary": "Contact me"
+    }
+  },
+  "about": {
+    "title": "About me",
+    "intro": "A snapshot of my teaching experience, classroom approach and student-focused practice.",
+    "photoAlt": "Portrait of informatics teacher",
+    "photoPlaceholder": "Photo",
+    "bio": {
+      "first": "I am a computer science teacher who truly loves my subject and modern technology. I believe computer science is not just about computers and programming, but also about developing logical thinking, creativity and problem-solving skills.",
+      "second": "I enjoy sharing my knowledge and making lessons engaging and clear. It is important that students not only learn the material, but also apply it in practice, grow their abilities and confidently explore the digital world. I aim to keep lessons supportive and help every student unlock their potential."
+    },
+    "summary": {
+      "title": "Teaching focus",
+      "items": {
+        "product": "Programming fundamentals and notation",
+        "interface": "Algorithmic thinking and problem solving",
+        "delivery": "Project-based learning and student engagement"
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "intro": "Core teaching and technical skills for an informatics classroom.",
+    "groups": {
+      "frontend": {
+        "title": "Programming languages",
+        "description": "The languages I teach regularly to students and in club work."
+      },
+      "creative": {
+        "title": "Teaching practice",
+        "description": "Curriculum design, lesson plans and interactive learning experiences."
+      },
+      "engineering": {
+        "title": "Education support",
+        "description": "Assessment, mentorship and classroom systems that keep students progressing."
+      }
+    },
+    "items": {
+      "react": "Python",
+      "typescript": "Java",
+      "vite": "C",
+      "tailwind": "C++",
+      "webgl": "Algorithms",
+      "canvas": "Lesson design",
+      "motion": "Project-based learning",
+      "designSystems": "Competition prep",
+      "node": "Student mentoring",
+      "testing": "Assessment",
+      "accessibility": "Inclusive teaching",
+      "performance": "Learning analytics"
+    }
+  },
+  "projects": {
+    "title": "Gallery",
+    "intro": "",
+    "imagePlaceholder": "Image",
+    "links": {
+      "live": "View",
+      "source": "Source",
+      "caseStudy": "Details",
+      "docs": "Resources"
+    },
+    "tags": {
+      "education": "Education",
+      "python": "Python",
+      "java": "Java",
+      "c": "C",
+      "cpp": "C++",
+      "interactive": "Interactive",
+      "lesson": "Lesson",
+      "ui": "UI",
+      "accessibility": "Accessibility",
+      "performance": "Performance"
+    },
+    "items": {
+      "interfaceLab": {
+        "title": "Digital Classroom Portal",
+        "description": "A school-facing platform for student assignments, lesson notes and coding club updates.",
+        "imageAlt": "Digital Classroom Portal preview placeholder"
+      },
+      "dataStory": {
+        "title": "Interactive Lesson Design",
+        "description": "A set of educational activities and visual exercises for teaching programming concepts.",
+        "imageAlt": "Interactive Lesson Design preview placeholder"
+      },
+      "systemsKit": {
+        "title": "Coding Club Curriculum",
+        "description": "A curriculum package for after-school coding classes with C, C++ and Python challenges.",
+        "imageAlt": "Coding Club Curriculum preview placeholder"
+      }
+    }
+  },
+  "experience": {
+    "title": "Experience & education",
+    "intro": "Teaching roles and training that support school computer science instruction.",
+    "workTitle": "Experience",
+    "educationTitle": "Education",
+    "items": {
+      "creativeStudio": {
+        "title": "Informatics Teacher",
+        "organization": "School Computer Science Department",
+        "period": "2022 - Present",
+        "description": "Delivering programming lessons, mentoring student projects and preparing learners for competitions."
+      },
+      "productTeam": {
+        "title": "Programming Instructor",
+        "organization": "Educational Workshop Program",
+        "period": "2018 - 2022",
+        "description": "Led coding workshops, developed lesson materials, and supported students through hands-on exercises."
+      }
+    }
+  },
+  "education": {
+    "items": {
+      "computerScience": {
+        "title": "Computer Science Education",
+        "organization": "Teacher Training Program",
+        "period": "2016 - 2018",
+        "description": "Studied pedagogy, curriculum development and digital learning methods for computer science."
+      },
+      "creativeCoding": {
+        "title": "Curriculum Development",
+        "organization": "Professional Development",
+        "period": "Ongoing",
+        "description": "Developing engaging learning activities, student projects and assessment resources."
+      }
+    }
+  },
+  "certificates": {
+    "title": "Certifications",
+    "intro": "Professional certificates and education technology training.",
+    "view": "View certificate",
+    "items": {
+      "frontendArchitecture": {
+        "title": "Computer Science Teaching Certificate",
+        "issuer": "Education Authority",
+        "period": "2024",
+        "description": "Formal training in teaching programming and digital literacy to school learners."
+      },
+      "uxEngineering": {
+        "title": "Educational Technology Certificate",
+        "issuer": "Learning Design Institute",
+        "period": "2023",
+        "description": "Methods for designing interactive lessons, digital learning experiences and classroom resources."
+      }
+    }
+  },
+  "languages": {
+    "title": "Programming Languages",
+    "intro": "A showcase of the languages I teach and help students master.",
+    "description": {
+      "first": "I teach programming fundamentals with Python, Java, C, and C++ for school and competitive programming.",
+      "second": "These languages help students build strong logic, algorithms, and software design skills."
+    },
+    "knowledges": "Teaching language",
+    "items": {
+      "python": "Python",
+      "java": "Java",
+      "c": "C",
+      "cpp": "C++"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "For lesson requests, school partnerships, or student project support, get in touch.",
+    "emailLabel": "Email",
+    "linksTitle": "Social links",
+    "links": {
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "telegram": "Telegram",
+      "facebook": "Facebook"
+    },
+    "form": {
+      "title": "Message",
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@example.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Write a few words about your request",
+      "submit": "Send message"
+    }
+  },
+  "footer": {
+    "copyright": "Portfolio for an informatics teacher built with React, TypeScript, Vite, Tailwind CSS and i18next."
+  }
+}
