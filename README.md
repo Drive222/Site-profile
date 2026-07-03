@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Портфолио Software Engineer & Creative Developer
 
 Современный сайт-портфолио на React, TypeScript, Vite, Tailwind CSS, i18next, react-helmet-async и Framer Motion.
@@ -118,3 +119,4 @@ Tailwind подключает эти переменные в `tailwind.config.ts
 - `src/components/ui/SectionShell.tsx` добавляет reveal-анимации секций при скролле.
 - Карточки, кнопки и элементы навыков используют Framer Motion для hover/tap эффектов.
 - Фон учитывает `prefers-reduced-motion`: при включенном снижении движения звезды остаются визуально, но перестают плавно двигаться.
+
