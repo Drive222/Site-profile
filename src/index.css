@@ -21,15 +21,15 @@
 }
 
 [data-theme='light'] {
-  --color-primary: 168 52% 36%;
-  --color-secondary: 214 42% 44%;
-  --color-accent: 24 77% 50%;
-  --color-background: 42 52% 96%;
-  --color-surface: 0 0% 100%;
-  --color-text: 220 20% 10%;
-  --color-muted: 218 12% 43%;
-  --color-border: 218 18% 82%;
-  --color-shadow: 220 28% 16%;
+  --color-primary: 19 17% 67%;
+  --color-secondary: 27 18% 72%;
+  --color-accent: 27 44% 91%;
+  --color-background: 52 12% 93%;
+  --color-surface: 36 11% 83%;
+  --color-text: 25 20% 18%;
+  --color-muted: 24 14% 52%;
+  --color-border: 25 12% 78%;
+  --color-shadow: 25 10% 80%;
 }
 
 html {
@@ -40,9 +40,11 @@ body {
   min-width: 320px;
   margin: 0;
   background:
-    radial-gradient(circle at top left, hsl(var(--color-primary) / 0.16), transparent 34rem),
-    radial-gradient(circle at bottom right, hsl(var(--color-accent) / 0.12), transparent 32rem),
-    hsl(var(--color-background));
+    radial-gradient(circle at top left, hsl(var(--color-primary) / 0.18), transparent 26rem),
+    radial-gradient(circle at 18% 18%, hsl(var(--color-secondary) / 0.16), transparent 18rem),
+    radial-gradient(circle at 70% 12%, hsla(0, 0%, 100%, 0.08), transparent 12rem),
+    linear-gradient(180deg, hsl(var(--color-background) / 0.98), hsl(var(--color-background) / 0.92));
+  background-attachment: fixed;
   color: hsl(var(--color-text));
   transition:
     background-color 220ms ease,

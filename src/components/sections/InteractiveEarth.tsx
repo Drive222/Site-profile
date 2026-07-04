@@ -126,7 +126,6 @@ export function InteractiveEarth() {
     controls.enablePan = false;
 
     const onPointerDown = (event: PointerEvent) => updateInteraction(event);
-    const onPointerMove = (event: PointerEvent) => updateInteraction(event);
     const onPointerUp = () => {
       if (controls.enabled) {
         renderer.domElement.style.cursor = 'grab';

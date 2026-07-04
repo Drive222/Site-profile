@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import fotoImage from '../../assets/uploads/foto.png';
 import webDevImage from '../../assets/uploads/231 Web Development - Websites, Applications and Software.jpg';
 import wordImage from '../../assets/uploads/Word.jpg';
@@ -43,7 +42,6 @@ const galleryItems = [
 ];
 
 export function ProjectsSection() {
-  const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
   const length = galleryItems.length;
 
@@ -83,7 +81,7 @@ export function ProjectsSection() {
         </div>
       </div>
 
-      <div className="relative mx-auto flex w-full max-w-7xl items-center justify-center px-2 py-4 lg:px-8">
+      <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center justify-center px-0 py-4 sm:px-2 lg:px-8">
         <div className="absolute left-3 hidden h-28 w-28 rounded-full border border-white/10 bg-white/5 blur-2xl lg:block" />
         <div className="absolute right-3 hidden h-28 w-28 rounded-full border border-white/10 bg-white/5 blur-2xl lg:block" />
 
@@ -110,16 +108,16 @@ export function ProjectsSection() {
 
           <motion.div
             key={current.id}
-            className="relative overflow-hidden rounded-[2.5rem] border border-primary/60 bg-background/80 p-1 shadow-[0_30px_80px_rgba(56,189,248,0.18)]"
+            className="relative w-full overflow-hidden rounded-[2rem] border border-primary/60 bg-background/80 p-1 shadow-[0_30px_80px_rgba(56,189,248,0.18)] sm:rounded-[2.5rem]"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.45 }}
           >
-            <div className="overflow-hidden rounded-[2.25rem] bg-black">
-              <img src={current.src} alt={current.alt} className="h-[26rem] w-full object-cover" />
+            <div className="overflow-hidden rounded-[1.75rem] bg-black sm:rounded-[2.25rem]">
+              <img src={current.src} alt={current.alt} className="h-[18rem] w-full object-cover sm:h-[26rem]" />
             </div>
-            <div className="absolute inset-x-0 bottom-0 mx-6 mb-6 rounded-3xl bg-black/60 px-5 py-4 text-white shadow-soft backdrop-blur">
-              <h3 className="text-2xl font-semibold">{current.title}</h3>
+            <div className="absolute inset-x-0 bottom-0 mx-3 mb-3 rounded-2xl bg-black/60 px-4 py-3 text-white shadow-soft backdrop-blur sm:mx-6 sm:mb-6 sm:rounded-3xl sm:px-5 sm:py-4">
+              <h3 className="text-lg font-semibold sm:text-2xl">{current.title}</h3>
             </div>
           </motion.div>
 
@@ -140,6 +138,36 @@ export function ProjectsSection() {
           onClick={handleNext}
           className="absolute right-0 z-20 hidden h-16 w-16 items-center justify-center rounded-full border border-border/70 bg-background/80 text-text transition hover:border-primary hover:text-primary lg:flex"
           aria-label="Next"
+        >
+          ›
+        </button>
+      </div>
+
+      <div className="mt-4 flex items-center justify-center gap-3 lg:hidden">
+        <button
+          type="button"
+          onClick={handlePrev}
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border/70 bg-background/80 text-xl text-text transition hover:border-primary hover:text-primary"
+          aria-label="Previous photo"
+        >
+          ‹
+        </button>
+        <div className="flex items-center gap-2">
+          {galleryItems.map((item, index) => (
+            <button
+              key={item.id}
+              type="button"
+              onClick={() => setActiveIndex(index)}
+              className={`h-2.5 rounded-full transition ${index === activeIndex ? 'w-7 bg-primary' : 'w-2.5 bg-border'}`}
+              aria-label={`Show ${item.title}`}
+            />
+          ))}
+        </div>
+        <button
+          type="button"
+          onClick={handleNext}
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border/70 bg-background/80 text-xl text-text transition hover:border-primary hover:text-primary"
+          aria-label="Next photo"
         >
           ›
         </button>

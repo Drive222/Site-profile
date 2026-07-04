@@ -13,23 +13,23 @@ export function HeroSection() {
   return (
     <SectionShell id="hero">
       <div className="grid min-h-[calc(100vh-12rem)] items-center gap-8 lg:grid-cols-[1fr_1.2fr]">
-        <div>
+        <div className="text-center sm:text-left">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">{t(hero.eyebrowKey)}</p>
-          <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-tight text-text sm:text-5xl lg:text-6xl">
+          <h1 className="mt-5 max-w-4xl text-3xl font-semibold leading-tight text-text sm:text-4xl lg:text-6xl">
             {t(hero.titleKey)}
           </h1>
           <div className="mt-6 space-y-2">
-            <p className="text-2xl font-semibold text-primary">{t(hero.nameKey)}</p>
-            <p className="text-lg text-muted">{t(hero.professionKey)}</p>
+            <p className="text-xl font-semibold text-primary sm:text-2xl">{t(hero.nameKey)}</p>
+            <p className="text-base text-muted sm:text-lg">{t(hero.professionKey)}</p>
           </div>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">{t(hero.introKey)}</p>
+          <p className="mt-6 max-w-2xl text-base leading-7 text-muted sm:text-lg sm:leading-8">{t(hero.introKey)}</p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             {hero.ctas.map((cta) => (
               <motion.button
                 key={cta.labelKey}
                 type="button"
                 onClick={() => scrollToSection(cta.targetId)}
-                className={`rounded-full px-5 py-3 text-sm font-semibold transition ${
+                className={`w-full rounded-full px-5 py-3 text-sm font-semibold transition sm:w-auto ${
                   cta.variant === 'primary'
                     ? 'bg-primary text-background shadow-glow hover:bg-primary/90'
                     : 'border border-border bg-surface/70 text-text hover:border-primary/70 hover:bg-surface'
@@ -44,7 +44,7 @@ export function HeroSection() {
         </div>
 
         <motion.div
-          className="relative overflow-visible"
+          className="relative mx-auto w-full max-w-[28rem] overflow-visible lg:max-w-none"
           whileHover={{ y: -6, rotate: -0.35 }}
           transition={{ type: 'spring', stiffness: 180, damping: 22 }}
         >

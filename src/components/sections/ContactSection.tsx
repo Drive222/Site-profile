@@ -15,8 +15,8 @@ export function ContactSection() {
   return (
     <SectionShell id="contact">
       <SectionHeader titleKey="contact.title" introKey="contact.intro" />
-      <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
-        <aside className="rounded-2xl border border-border bg-surface/75 p-5 shadow-soft backdrop-blur">
+      <div className="grid gap-6 sm:gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+        <aside className="rounded-2xl border border-border bg-surface/75 p-4 shadow-soft backdrop-blur sm:p-5">
           <h3 className="text-xl font-semibold text-text">{t('contact.emailLabel')}</h3>
           <a className="mt-3 inline-flex text-primary underline-offset-4 hover:underline" href={`mailto:${contactContent.email}`}>
             {contactContent.email}
@@ -39,7 +39,7 @@ export function ContactSection() {
           </ul>
         </aside>
 
-        <form className="rounded-2xl border border-border bg-surface/75 p-5 shadow-soft backdrop-blur" onSubmit={handleSubmit}>
+        <form className="rounded-2xl border border-border bg-surface/75 p-4 shadow-soft backdrop-blur sm:p-5" onSubmit={handleSubmit}>
           <h3 className="text-xl font-semibold text-text">{t('contact.form.title')}</h3>
           <div className="mt-5 grid gap-4 sm:grid-cols-2">
             <label className="grid gap-2 text-sm font-semibold text-text">

@@ -10,11 +10,11 @@ export function SkillsSection() {
   return (
     <SectionShell id="skills">
       <SectionHeader titleKey="skills.title" introKey="skills.intro" />
-      <div className="grid gap-5 md:grid-cols-3">
+      <div className="grid gap-4 sm:gap-5 md:grid-cols-3">
         {skillGroups.map((group) => (
           <motion.article
             key={group.id}
-            className="rounded-2xl border border-border bg-surface/70 p-5 shadow-soft backdrop-blur"
+            className="rounded-2xl border border-border bg-surface/70 p-4 shadow-soft backdrop-blur sm:p-5"
             whileHover={{ y: -6 }}
             transition={{ type: 'spring', stiffness: 220, damping: 24 }}
           >

@@ -40,7 +40,7 @@ export function LanguageSwitcher() {
         aria-expanded={isOpen}
         aria-haspopup="listbox"
         aria-label={t('language.label')}
-        className="inline-flex h-10 min-w-[72px] items-center justify-between gap-2 rounded-full border border-border/70 bg-surface/65 px-3 text-xs font-semibold text-text shadow-soft transition hover:bg-background/80"
+        className="inline-flex h-9 min-w-[64px] items-center justify-between gap-2 rounded-full border border-border/70 bg-surface/65 px-2.5 text-[11px] font-semibold text-text shadow-soft transition hover:bg-background/80 sm:h-10 sm:min-w-[72px] sm:px-3 sm:text-xs"
       >
         <span>{t(`language.${activeLanguage}`)}</span>
         <span className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} aria-hidden="true">

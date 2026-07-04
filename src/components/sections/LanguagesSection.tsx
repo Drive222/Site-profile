@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
 import { useEffect, useRef } from 'react';
 import pythonLogo from '../../assets/uploads/python.png';
 import javaLogo from '../../assets/uploads/java.jpg';
@@ -65,8 +64,6 @@ const trackGroups = [
 ];
 
 export function LanguagesSection() {
-  const { t } = useTranslation();
-
   const containerRef = useRef<HTMLDivElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
@@ -81,7 +78,7 @@ export function LanguagesSection() {
     if (!ctx2) return;
     const ctx = ctx2;
 
-    let dpr = Math.max(1, window.devicePixelRatio || 1);
+    const dpr = Math.max(1, window.devicePixelRatio || 1);
     function resize() {
       const rect = ctn.getBoundingClientRect();
       cvs.width = Math.round(rect.width * dpr);

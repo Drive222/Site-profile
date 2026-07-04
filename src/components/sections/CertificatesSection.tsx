@@ -10,11 +10,11 @@ export function CertificatesSection() {
   return (
     <SectionShell id="certificates" className="bg-surface/25 backdrop-blur-sm">
       <SectionHeader titleKey="certificates.title" introKey="certificates.intro" />
-      <div className="grid gap-5 md:grid-cols-2">
+      <div className="grid gap-4 sm:gap-5 md:grid-cols-2">
         {certificates.map((certificate) => (
           <motion.article
             key={certificate.id}
-            className="rounded-2xl border border-border bg-surface/75 p-5 shadow-soft backdrop-blur"
+            className="rounded-2xl border border-border bg-surface/75 p-4 shadow-soft backdrop-blur sm:p-5"
             whileHover={{ y: -5 }}
             transition={{ type: 'spring', stiffness: 210, damping: 24 }}
           >

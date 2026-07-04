@@ -20,7 +20,7 @@ function TimelineList({ titleKey, items }: TimelineListProps) {
         {items.map((item) => (
           <motion.li
             key={item.id}
-            className="rounded-2xl border border-border bg-surface/70 p-5 shadow-soft backdrop-blur"
+            className="rounded-2xl border border-border bg-surface/70 p-4 shadow-soft backdrop-blur sm:p-5"
             whileHover={{ x: 4, borderColor: 'hsl(var(--color-primary) / 0.65)' }}
           >
             <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
@@ -42,7 +42,7 @@ export function ExperienceSection() {
   return (
     <SectionShell id="experience">
       <SectionHeader titleKey="experience.title" introKey="experience.intro" />
-      <div className="grid gap-8 lg:grid-cols-2">
+      <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
         <TimelineList titleKey="experience.workTitle" items={experienceItems} />
         <TimelineList titleKey="experience.educationTitle" items={educationItems} />
       </div>

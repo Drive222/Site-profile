@@ -28,7 +28,7 @@ declare module 'three/examples/jsm/controls/OrbitControls' {
 }
 
 declare module 'three/examples/jsm/loaders/FBXLoader' {
-  import { LoadingManager, Group, LoadingManagerOptions, Material, AnimationClip, Event } from 'three';
+  import { LoadingManager, Group } from 'three';
 
   export class FBXLoader {
     manager: LoadingManager;
